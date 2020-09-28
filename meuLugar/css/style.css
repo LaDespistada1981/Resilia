@@ -1,0 +1,59 @@
+* {
+    background-color: #E5E8E8;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.item_1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.lugares {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 25px;
+
+}
+.item_2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}

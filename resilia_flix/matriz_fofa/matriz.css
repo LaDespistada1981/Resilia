@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 400;
+    color: #615f5f;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+ul{
+    width: 200px;
+    height: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+.container_1 {
+    display: inline-flex;
+    width: 100%;
+    align-content: center;
+    position: absolute;
+    margin: 0;
+}
+
+.forcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #a6f038cb;
+    width: 50%;
+    height: 300px;
+}
+
+.fraquezas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #f09f0893;
+    width: 50%;
+    height: 300px;
+}
+
+.container_2 {
+    display: inline-flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 0;
+    align-content: center;
+}
+
+.oportunidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #afeeee;
+    width: 50%;
+    height: 300px;
+}
+
+.ameacas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #dda0dd;
+    width: 50%;
+    height: 300px;
+}

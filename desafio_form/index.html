@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Resilia - Formulário de Inscrição</title>
+</head>
+<body>
+    <header>
+        <img class="banner" src="img/banner_resilia_black.svg" alt="Banner">
+    </header>
+    <main>
+        <form id="inscricao" action="#">
+            <h2>Inscrições</h2>
+            <div class="nome">
+                <label for="name">Nome</label>
+                <input type="text" id="name" />
+            </div>
+
+            <div class="sobrenome">
+                <label for="surname">Sobrenome</label>
+                <input type="text" id="surname">
+            </div>
+
+            <div class="birth-year">
+                <label for="date">Ano de Nascimento</label>
+                <input type="number" id="birth_year">
+            </div>
+
+            <div class="cpf">
+                <label for="cpf">CPF</label>
+                <input type="number">
+            </div>
+
+            <div class="enviar">
+                <button type="submit" form="inscricao" value="enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p><i class="fa fa-copyright" aria-hidden="true">&#169 Copyrigth by Robertinha</i></p>
+    </footer>
+</body>
+</html>

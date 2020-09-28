@@ -1,0 +1,114 @@
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    background-color: #d5dce2;
+}
+
+.nav-bar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-bar h1 {
+    color: yellow;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    height: auto;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.week {
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    padding: 20;
+    border-radius: 15px;
+}
+
+ #flex-container div h3 {
+     font-size: 20px;
+ }
+
+ #flex-container div li {
+     text-align: start;
+     width: 600px;
+ }
+
+ #flex-container div a {
+     position: absolute;
+     left: 150px;
+ }
+
+ #flex-container .imagens {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+ }
+
+ #logo_01 {
+    position: absolute;
+    left: 650px;
+    top: 35%;
+    width: 85px;
+    align-items: center;
+    display: block;
+}
+
+#logo_02 {
+    position: absolute;
+    right: 500px;
+    top: 35%;
+    width: 90px;
+    align-items: center;
+    display: block;
+}
+
+#pg_01 {
+    position: absolute;
+    left: 600px;
+    bottom: 5%;
+    width: 25%;
+    align-content: right;
+    display: block;
+}
+
+#pg_02 {
+    position: absolute;
+    right: 100px;
+    bottom: 5%;
+    width: 20%;
+    display: inline-block;
+    
+}
+
+#flex-container .week {
+    height: auto;
+}
+
+ul {
+    width: 50%;
+
+}

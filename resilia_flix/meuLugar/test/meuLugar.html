@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meus Lugarares Preferidos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+
+    <style>
+        
+        #carousel {
+            display: flexbox;
+            width: 100vh;
+            justify-content: center;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+    </style>
+    
+</head>  
+<body>
+    <center>
+        <header>
+            <h1>Meus lugares preferidos no Rio de Janeiro</h1>
+        </header>
+    </center>
+    <!--Bootstrap_Carrossel-->
+    <section id="carousel" background-color="blue">
+        <div class="container-fluid" m-3>
+            <div id="cena" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#cena" data-slide-to="0" class="active"></li>
+                    <li data-target="#cena" data-slide-to="1"></li>
+                    <li data-target="#cena" data-slide-to="2"></li>
+                </ul>
+                <center>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/urca.jpg" alt="Praia Vermelha - Urca" class="img-fluid d-block" height="500px">
+                            <div class="carousel-caption">
+                                <h3>Praia Vermelha - Urca</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/lemeAterro.jpg" alt="Leme e Aterro do Flamengo" class="img-fluid d-block" height="500px">
+                            <div class="carousel-caption">
+                                <h3>Leme e Aterro do Flamengo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/lagoaLapa.jpg" alt="Lagoa e Lapa" class="img-fluid d-block" height="500px">
+                            <div class="carousel-caption">
+                                <h3>Lagoa Rodrigo de Freitas e Lapa</h3>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <a href="#cena" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                
+                <a href="#cena" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Fim do Bootstrap_Carrossel-->
+</body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+</html>
