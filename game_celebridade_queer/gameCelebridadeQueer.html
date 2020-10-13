@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Game - Personalidade Queer</title>
+</head>
+<body>
+   
+    <br><br>
+    <div class="container"></div>
+        <h2>Pergunta 01</h2>
+        <div class="card">
+            <p>
+                Filho de pais indianos, esta celebridade nasceu em Zanzibar  e aos  8 anos de idade foi estudar em  Bombaim.
+                Aos 12 anos formou The Hectics, sua primeira banda, mostrando grande talento.
+                Repentinamente seus pais são transferidos para Londres. Ele deve seguir com seus pais?
+            </p>
+            <div class ="selecao">
+                <input type="radio" name="condicao" id="yes">Sim
+                <input type="radio" name="condicao" id="no">Não
+                <button type="submit" onclick="clicar()" id= "botao">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+    <br><br>
+
+    <div class="container"></div>
+        <h2>Pergunta 02</h2>
+        <div class="card">
+            <p>
+                Após sua formação, nossa celebridade vai trabalhar em uma loja de roupas no Mercado de Kensington ao lado de sua namorada e também trabalhava como  atendente no Aeroporto de Heathrow. 
+                Em 1969 nossa celebridade tem oportunidade de retornar a música, fundando a banda Wreckage. Ele fica na Wreckage ou segue como atendente no aeroporto?
+            </p>
+            <div class ="selecao">
+                
+                <input type="radio" name="condicao" id="yes">Sim
+                <input type="radio" name="condicao" id="no">Não
+                <button type="submit" onclick="clicar()" id= "botao">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--<div class="container"></div>
+        <h2>Pergunta 03</h2>
+        <div class="card">
+            <div id ="card-03">
+                <p>
+                    Após o fracasso de sua banda, nosso personagem se junta a um baterista e um guitarrista e tenta emplacar uma nova banda, a Smile.
+                    Você acha que eles alcançaram sucesso com esse nome???
+                </p>
+                <input type="radio" name="condicao" id="yes">Sim
+                <input type="radio" name="condicao" id="no">Não
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container"></div>
+        <h2>Pergunta 04</h2>
+        <div class="card">
+            <div id ="card-03">
+                <p>
+                    Acerte essa última pergunta e nosso personagem será revelado.
+                    <b>Your Song, Nikita</b> e <b> Rocket Man</b> foram compostas por nosso personagem?
+                </p>
+                <button id=07 type="button" class="btn btn-primary">SIM</button>
+                <button id=08 type="button" class="btn btn-secundary">NÃO</button>
+            </div>
+        </div>
+    </div>
+    <br><br>-->
+
+    <script>
+        function clicar() {
+            var radio1 = document.getElementsByName('condicao');
+            var botao = document.querySelector('button#botao');
+            var resultado = document.getElementById('resultado');
+
+            if (radio1[0].checked){
+
+                resultado.innerHTML="Ok"
+
+            }else if(radio1[1].checked) {
+                resultado.innerHTML="Not OK!"
+            }
+        } 
+    </script>
+  
+</body>
+</html>

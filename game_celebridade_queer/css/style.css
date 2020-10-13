@@ -1,0 +1,25 @@
+.container h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card {
+    background: cornflowerblue;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.selecao {
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+.selecao input {
+    margin-right: 10px;
+}
+
+.selecao button {
+    margin-left: 30px;
+}
+

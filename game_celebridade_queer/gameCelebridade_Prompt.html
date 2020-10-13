@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe Queer</title>
+</head>
+<body>
+    <script>
+        function restartGame() {
+            document.location.reload(true);
+        }
+        
+        alert("NESSE GAME DE ADIVINHAÇÃO, VOCÊ DEVE SEGUIR AS PISTAS PARA IDENTIFICAR NOSSA PERSONALIDADE QUEER...")
+        alert("Filho de pais indianos, nosso personagem nasceu em Zanzibar e foi criado em Bombaim.\nAos 12 anos formou The Hectics, sua primeira banda.")
+        var condicao = parseInt(prompt("Repentinamente seus pais são transferidos para Londres.\nNosso personagem deve deixar a banda e mudar-se para Londres com seus pais?\n 1 - NÃO\n 2 - SIM"));
+        if (condicao == "1") {
+            alert("Você ERROU a trajetória de nosso personagem!!!\nTente novamente!!!");
+            restartGame();
+
+        } else if (condicao == "2") {
+            alert("Você ACERTOU!!!\nNosso personagem seguiu para Londres com seus pais e formou-se em Design Gráfico pela Ealing Art College")
+            
+            var condicao2 = parseInt(prompt("Após forma-se em Design, nosso personagem trabalhou em uma loja de roupas em Kensington e como atendente no Aeroporto de Heathrow.\nEle conseguiu uma oportunidade de cantar em uma banda chamada Wreckage.\nEle deve abandonar o emprego na loja e no aeroporto e investir na carreira musical?\n 1 - NÃO\n 2 - SIM"))
+                if (condicao2 == "1") {
+                    alert("Você ERROU a trajetória de nosso personagem!!!\nTente novamente!!!")
+                    restartGame();
+
+                } else if (condicao2 == "2") {
+                    alert("Você ACERTOU!!!\nEle investiu na Banda Wreckage, mas a banda não durou muito.")
+
+                    var condicao3 = parseInt(prompt("Após o fracasso de Wreckage, nosso personagem se junta a um novo baterista e a um novo guitarrista e tentam emplacar uma nova banda, a Smile.\nVocê acha que eles alcançaram sucesso com esse nome?\n1 - SIM\n 2 - NÃO"))
+                    if (condicao3 == "1") {
+                        alert("Você ERROU!!!\nEles só fizeram sucesso depois que mudaram o nome da banda para Queen. Tente novamente.")
+                        restartGame();
+
+                    } else if (condicao3 == "2") {
+                        alert("Você ACERTOU!!!\nEles só fizeram sucesso quando mudaram o nome da banda.")
+
+                        var condicaoFinal = parseInt(prompt("Acerte essa última pergunta e nosso personagem será revelado.\nYour Song, Nikita e Rocket Man foram compostas por nosso personagem?\n1 - SIM\n 2 - NÃO"))
+                        if (condicaoFinal == 1) {
+                            alert("CARACA MALUCO!!!! Como vc conseguiu errar essa??? Se quiser descobrir nosso personagem, tente novamente!!!")
+                            restartGame();
+
+                        }else if (condicaoFinal == 2) {
+                            alert("Você acertou!!! Agora vc merece saber quem é a nossa personalidade Queer misteriosa...")
+                            alert("Nossa celebridade Queer é o líder do QUEEN e um dos MAIORES CANTORES de todos os tempos...")
+                            alert("Nossa celebridade Queer é FREDDIE MERCURY!!!")
+                            restartGame();
+                        }
+                    }
+                }
+            } else {
+            alert("Comando inválido! Tente novamente.")
+            restartGame();
+        }
+    </script>
+</body>
+</html>
