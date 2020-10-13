@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de Cesar</title>
+</head>
+<body>
+    <script>
+        var nome = (prompt("Insira uma mensargem - use somente letras maiúsculas")).toUpperCase(); 
+        var chave = parseInt(prompt("Insira uma chave numérica para codificar a mensagem"));
+
+        function cifraCesar(nome, deslocamento) {
+            var letraArr = [];
+            var codigoArr = [];
+            var cifraArr =  [];
+            var deslocamentoArr = [];
+
+            for (var i = 0; i < nome.length; i++) {
+                var letra = nome[i]
+                letraArr.push(letra);
+                var codigo = letra.charCodeAt(letra);
+                codigoArr.push(codigo);
+                var deslocamento = (codigo + chave);
+                if (deslocamento >= 90) {//Condição para looping voltanto para o A a partir do Z
+                    var deslocamento = (deslocamento -= 26);
+                }
+                deslocamentoArr.push(deslocamento);
+                var cifra = String.fromCharCode(deslocamento);
+                cifraArr.push(cifra);
+                console.log(`'${letra}' = '${codigo}' + '${deslocamento}' = '${cifra}'`);
+            }
+        }
+        console.log(cifraCesar(nome, chave));
+    </script>
+</body>
+</html>
