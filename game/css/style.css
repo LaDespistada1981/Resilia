@@ -1,11 +1,6 @@
-body {
+* {
     font: normal Arial;
 }
-
-body background {
-    opacity: 1%;
-}
-
 h1 {
     background-color: black;
     font-size: xx-large;
@@ -18,35 +13,41 @@ h2 {
     font-size: x-large;
     margin: 30px;
     text-align: center;
-
 }
 
-.box-pergunta{
+#box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 20px;
     background-color: white;
     width: 70%;
-    height: 200px;
-} 
-
-button {
-    display: flex;
-    justify-content: center;
-    align-self: end;
+    height: auto;
 }
 
-.box-resposta{
-    display: flex;
+.selecao button {
+    font-size: 12pt;
+    display: inline-flex;
     justify-content: center;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-left: auto;
-    border-radius: 20px;
-    background-color: white;
-    width: 70%;
-    height: 100px;
+    align-items: center;
+    background-color:#6fb82b;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 10px;
+    border: none;
+}
+
+.selecao button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
 }

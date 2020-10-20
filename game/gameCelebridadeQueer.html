@@ -17,109 +17,42 @@
        
    </header>
 
-    <div class="box-pergunta">
-        <h2>Nesse game, você deve seguir as pistas para identificar nossa celebridade Queer...</h2>
-        <p class="pergunta"></p>
+   <main>
+        <div id="box">
 
-        <input type="radio" name="condicao" id="yes">Sim
-        <input type="radio" name="condicao" id="no">Não
-        <button type="submit" onclick="clicar()" id= "botao">Avançar</button>
-
-    </div>
-
-    <div class="box-resposta">
-
-
-    </div>
-        function 
-
-    <script>
-
-
-    </script>
-    
-    <!-- <div class="container"></div>
-        <h2>Pergunta 01</h2>
-        <div class="card">
-            <p>
-                Filho de pais indianos, esta celebridade nasceu em Zanzibar  e aos  8 anos de idade foi estudar em  Bombaim.
-                Aos 12 anos formou The Hectics, sua primeira banda, mostrando grande talento.
-                Repentinamente seus pais são transferidos para Londres. Ele deve seguir com seus pais?
-            </p>
-            <div class ="selecao">
-                <input type="radio" name="condicao" id="yes">Sim
-                <input type="radio" name="condicao" id="no">Não
-                <button type="submit" onclick="clicar()" id= "botao">Enviar</button>
+            <h2 id="h2_a">Nesse game, você deve seguir as pistas para identificar nossa celebridade Queer...</h2>
+            <h2 id="h2_b">Deseja iniciar o jogo?</h2>
+            <div class="selecao">
+                <button type="submit" id="botao-1" onclick="clicar()"> Sim </button>
+                <button type="submit" id="botao-2" onclick="clicar()"> Não </button>
             </div>
+
         </div>
-    </div> -->
-<!-- 
-    <div id="resultado"></div>
-    <br><br>
 
-    <div class="container"></div>
-        <h2>Pergunta 02</h2>
-        <div class="card">
-            <p>
-                Após sua formação, nossa celebridade vai trabalhar em uma loja de roupas no Mercado de Kensington ao lado de sua namorada e também trabalhava como  atendente no Aeroporto de Heathrow. 
-                Em 1969 nossa celebridade tem oportunidade de retornar a música, fundando a banda Wreckage. Ele fica na Wreckage ou segue como atendente no aeroporto?
-            </p>
-            <div class ="selecao">
-                
-                <input type="radio" name="condicao" id="yes">Sim
-                <input type="radio" name="condicao" id="no">Não
-                <button type="submit" onclick="clicar()" id= "botao">Enviar</button>
-            </div>
-        </div>
-    </div>
-    <br> -->
+   </main>
 
-    <!--<div class="container"></div>
-        <h2>Pergunta 03</h2>
-        <div class="card">
-            <div id ="card-03">
-                <p>
-                    Após o fracasso de sua banda, nosso personagem se junta a um baterista e um guitarrista e tenta emplacar uma nova banda, a Smile.
-                    Você acha que eles alcançaram sucesso com esse nome???
-                </p>
-                <input type="radio" name="condicao" id="yes">Sim
-                <input type="radio" name="condicao" id="no">Não
-                <button type="submit">Enviar</button>
-            </div>
-        </div>
-    </div>
-    <br>
+   <script>
 
-    <div class="container"></div>
-        <h2>Pergunta 04</h2>
-        <div class="card">
-            <div id ="card-03">
-                <p>
-                    Acerte essa última pergunta e nosso personagem será revelado.
-                    <b>Your Song, Nikita</b> e <b> Rocket Man</b> foram compostas por nosso personagem?
-                </p>
-                <button id=07 type="button" class="btn btn-primary">SIM</button>
-                <button id=08 type="button" class="btn btn-secundary">NÃO</button>
-            </div>
-        </div>
-    </div>
-    <br><br>-->
+       var texto = document.getElementById("box")
+       var h2_01 = document.getElementById("h2_a")
+       var h2_02 = document.getElementById("h2_b")
+       var botao1 = document.getElementById("botao-1")
+       var botao2 = document.getElementById("botao-2")
 
-    <script>
-        function clicar() {
-            var radio1 = document.getElementsByName('condicao');
-            var botao = document.querySelector('button#botao');
-            var resultado = document.getElementById('resultado');
+       function clicar() {
+           h2_01.innerHTML = `Filho de pais indianos, nosso personagem nasceu em Zanzibar e foi criado Bombaim. <br>Aos 12 anos formou The Hectics, sua primeira banda, mostrando grande talento.`
+           h2_02.innerHTML = `Repentinamente, em 1964 seus pais são transferidos para Londres em meio a Revolução de Zanzibar. Ele deve seguir com seus pais?`
+        //    botao1.onclick = opcao2()
+        //    botao2.onclick = opcao3()
+       }
 
-            if (radio1[0].checked){
+       function opcao2() {
+           h2_01.innerHTML = `Em Londres, nosso personagem forma-se em Design Gráfico na Ealing Art College.`
+           h2_02.innerHTML = `Ele conseguiu uma oportunidade de cantar em uma banda chamada Wreckage. Ele deve abandonar o emprego na loja e no aeroporto e investir na carreira musical?`
+           botao1.onclick = `Ele investiu na Banda Wreckage, mas a banda não durou muito.`
+           botao2.onclick = `Ele é demitido do aeroporto e desempregado, ainda perde a namorada.`
+       }
 
-                resultado.innerHTML="Ok"
-
-            }else if(radio1[1].checked) {
-                resultado.innerHTML="Not OK!"
-            }
-        } 
-    </script>
-  
+   </script>
 </body>
 </html>
