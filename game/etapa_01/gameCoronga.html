@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Coronga</title>
+</head>
+<body>
+    <script>
+        function restartGame() {
+            document.location.reload(true);
+        }
+        
+        alert("Você acordou no Mundo de Coronga.");
+        var condicao = parseInt(prompt("Você sai de casa?\n 1 - SIM\n 2 - NÃO"));
+        if ( condicao == "1" ) {
+            alert("Viiiixe!!!\nVocê se lascou!!!\nFoi corongado e morreu!")
+            restartGame();
+
+        } else if (condicao == "2") {
+            alert( "Sábia decisão!!!\nVá para o PC e aprenda a programar!")
+
+            var condicao2 = parseInt(prompt("Você fez projetos e exercícios?\n 1 - SIM\n 2 - NÃO")); {
+                if (condicao2 == "1") {
+                    alert("Parabéns!!!\nCom essa decisão, você criou seu portifólio, fez case  de entrevista e passou.")
+                    restartGame();
+
+                } else if (condicao == "2" ){
+                    alert("Você não está sendo efetivo em seus estudos!\nVocê não conseguiu fazer case da entrevista e foi reprovado no processo seletivo.");
+                    restartGame();
+                }
+            }
+        } else {
+            alert("Comando inválido! Tente novamente.")//botão para iniciar o jogo
+            restartGame();
+        }
+    </script>
+</body>
+</html>

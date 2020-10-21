@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Game - Celebridade Queer</title>
+    
+</head>
+<body>
+    <header>
+        <body background="./img/rainbowBackground.png">
+            
+            <h1><strong>Game Celebridade Queer</strong></h1>
+            
+    </header>
+        
+        <main>
+            <div id="box">
+                
+                <h2 id="h2_a">Nesse game, você deve seguir as pistas para identificar nossa celebridade Queer...</h2>
+                <h2 id="h2_b">Deseja iniciar o jogo?</h2>
+                <h2 id="h2_c"><img id="gif" src="./img/start01.gif" alt=""></h2>
+                
+                <div class="selecao">
+                    <button type="submit" id="botao-1" onclick="clicarSimInicial()"> Sim </button>
+                    <button type="submit" id="botao-2" onclick="clicarNaoInicial()"> Não </button>
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <script>
+            
+            var h2_01 = document.getElementById("h2_a")
+            var h2_02 = document.getElementById("h2_b")
+            var h2_03 = document.getElementById("h2_c")
+            var botao1 = document.getElementById("botao-1")
+            var botao2 = document.getElementById("botao-2")
+            var imgGif = document.querySelector("gif")
+
+            function restartGame() {
+                document.location.reload(true);
+            }
+
+            function clicarSimInicial() {
+                h2_01.innerHTML = `Filho de pais indianos, nosso personagem nasceu no ano de 1946 em Zanzibar na Tanzânia.<br>Aos 12 anos formou The Hectics, sua primeira banda, mostrando grande talento.`
+                h2_02.innerHTML = `<img id="gif" src="./img/india.webp" alt="">`
+                h2_03.innerHTML = `Em 1964 seus pais são transferidos para Londres em meio a Revolução de Zanzibar. Ele deve partir com seus pais?`
+                botao1.onclick = parabens
+                botao2.onclick = opcaoNao1
+            }
+
+            function clicarNaoInicial() {
+                h2_01.innerHTML = `Sério que você vai desistir antes do fim?`
+                h2_02.innerHTML = `<img id="gif" src="./img/gameOver.gif" alt="">`
+                h2_03.innerHTML = `Cadê sua resiliência??? Bora tentar outra vez???`
+                botao1.onclick = restartGame
+                botao2.onclick = gameOver
+            }
+            
+            function opcaoSim1() {
+                h2_01.innerHTML = `Em Londres, nosso personagem forma-se em Design Gráfico e após a formatura, começa a trabalhar em uma loja de roupas ao lado de sua namorada. Ele também trabalhava no Aeroporto de Heathrow. `
+                h2_02.innerHTML = `<img id="gif" style="width:120px"src="./img/airport.gif" alt="">`
+                h2_03.innerHTML = `Surge a oportunidade de retomar a carreira musical em uma nova banda. Ele deve abandonar o emprego na loja e no aeroporto para investir na carreira musical?`
+                botao1.onclick = opcaoSim2
+                botao2.onclick = opcaoNao2
+            }
+            
+            function opcaoNao1() {
+                h2_01.innerHTML = `Ih, ficando em Bombaim, nosso personagem acaba morrendo vítima da Revolução Civil de Zanzibar em 1964.`
+                h2_02.innerHTML = `<img id="gif" style="width:250px" src="./img/guerra.gif" alt="">`
+                h2_03.innerHTML = `Gostaria de tentar novamente?`
+                botao1.onclick = restartGame
+                botao2.onclick = clicarNaoInicial
+            }
+            
+            function opcaoSim2() {
+                h2_01.innerHTML = `Ele investiu na banda, mas ela não durou muito.`
+                h2_02.innerHTML = `<img id="gif" style="width:250px" src="./img/fail_band.gif" alt="">`
+                h2_03.innerHTML = `Você acha que ele deve continuar insistindo?`
+                botao1.onclick = opcaoSim3
+                botao2.onclick = opcaoNao2
+            }
+            
+            function opcaoNao2() {
+                h2_01.innerHTML = `Nosso amigo não parava de pensar em sua música e por negligenciar o emprego, acabou demitido do aeroporto e ainda perdeu a namorada.`
+                h2_02.innerHTML = `<img id="gif" style="width:200px" src="./img/coracao.gif" alt="">`
+                h2_03.innerHTML = `Você acha que ele deve insistir com a música? Vamos dar mais uma chance a ele?`
+                botao1.onclick = opcaoSim3
+                botao2.onclick = opcaoNao3
+            }
+
+            function opcaoSim3() {
+                h2_01.innerHTML = `Agora sim!!! Nosso amigo encontrou um baterista e um guitarrista para emplacar uma nova banda, a Smile.`
+                h2_02.innerHTML = `<img id="gif" style="width:250px" src="./img/smile.gif" alt="">`
+                h2_03.innerHTML = `Você acha que eles alcançaram sucesso com esse nome??`
+                botao1.onclick = voceErrou
+                botao2.onclick = parabens2
+            }
+
+            function opcaoNao3() {
+                h2_01.innerHTML = `Nosso personagem se tornou um executivo sem graça e morreu de infarto antes dos 40 anos... `
+                h2_02.innerHTML = `<img id="gif" style="width:250px" src="./img/morta.gif" alt="">`
+                h2_03.innerHTML = `Sorry, my friend!!! Vamos tentar dar uma vida mais feliz ao nosso personagem???`
+                botao1.onclick = restartGame
+                botao2.onclick = gameOver
+            }
+
+            function voceErrou() {
+                h2_01.innerHTML = `Eles só fizeram sucesso depois que mudaram o nome da banda. Não acredido que você errou tão perto do fim!`
+                h2_02.innerHTML = `<img id="gif" style="width:250px" src="./img/erroBola.gif" alt="">`
+                h2_03.innerHTML = `Quer tentar mais uma vez?`
+                botao1.onclick = restartGame
+                botao2.onclick = clicarNaoInicial
+            }
+            
+            function parabens() {
+                h2_01.innerHTML = `Parabéns!!! Você está mais próximo de descobrir nosso personagem!!!`
+                h2_02.innerHTML = `<img id="gif" src="./img/celebrate1.gif" alt="">`
+                h2_03.innerHTML = `Bora continuar???`
+                botao1.onclick = opcaoSim1
+                botao2.onclick = clicarNaoInicial
+            }
+
+            function parabens2() {
+                h2_01.innerHTML = `Parabéns!!! Você está quase lá!!! Acerte essa última pergunta e nosso personagem será revelado.`
+                h2_02.innerHTML = `<img id="gif" src="./img/celebrate1.gif" alt="">`
+                h2_03.innerHTML = `Podemos continuar???`
+                botao1.onclick = perguntaFinal
+                botao2.onclick = clicarNaoInicial
+            }
+
+            function perguntaFinal() {
+                h2_01.innerHTML = `Your Song, Nikita e Rocket Man são músicas gravadas por nosso personagem?`
+                h2_02.innerHTML = `<img id="gif" style="width:200px" src="./img/elton.gif" alt="">`
+                h2_03.innerHTML = ``
+                botao1.onclick = voceErrouRude
+                botao2.onclick = revelacaoFinal
+            }
+
+            function voceErrouRude() {
+                h2_01.innerHTML = `CARACA MALUCO!!!! Como vc conseguiu errar essa tão perto do fim??? `
+                h2_02.innerHTML = `<img id="gif" style="width:200px" src="./img/erroBola.gif" alt="">`
+                h2_03.innerHTML = `Se quiser descobrir nosso personagem, precisa reiniciar o jogo. Bora tentar de novo?`
+                botao1.onclick = restartGame
+                botao2.onclick = clicarNaoInicial
+            }
+            function revelacaoFinal() {
+                    h2_01.innerHTML = `You are the champion!!! Freedie Mercury, o líder do Queen é a nossa celebridade Queer!!!`
+                    h2_02.innerHTML = `<img id="gif" src="./img/freddie_queen.gif" alt="">`
+                    h2_03.innerHTML =`Parabéns por ter chegado até o fim!!! Gostaria de reiniciar?`
+                    botao1.onclick = restartGame
+                    botao2.onclick = gameOver
+            }
+
+            function gameOver() {
+                h2_01.innerHTML = `Por hoje é só, pessoal!!!`
+                h2_02.innerHTML = `<img id="gif" src="./img/fimJogo.webp" alt="">`
+                h2_03.innerHTML = `Recomeçar?`
+                botao1.onclick = restartGame
+                botao2.onclick = restartGame
+            }
+                
+            </script>
+        </body>
+        </html>
