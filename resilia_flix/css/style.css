@@ -1,5 +1,5 @@
 body {
-    background: #e4bf06;
+    background: #ebeb05;
     overflow-x: hidden;
     display: block;
 }
@@ -7,12 +7,42 @@ body {
 .menu {
     display: flex;
     background-color: #2d2c2c;
-    color: 	#e4bf06;
+    color: 	#ebeb05;
     width: 100%;
-    height: 40px;
+    height: 50px;
     justify-content: space-around;
     align-items: center;
     padding: 25px;
+ }
+
+ .menu .busca {
+     background-color: #ebeb05;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 320px;
+     height: 30px;
+     display: flex;
+     border: solid 0px;
+     border-radius: 5px;
+ }
+
+ .menu .busca .btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     margin-left: 20px;
+     border-color: #ebeb05 ;
+     border-radius: 50%;
+     text-decoration: none;
+ }
+
+ .menu .busca input {
+     width: 80%;
+     height: 15px;
+     margin-left: 10px;
  }
 
  .menu .busca img {
@@ -21,11 +51,12 @@ body {
      justify-content: center;
      width: 15px;
      height: 15px;
+     margin-right: 20px;
  }
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     margin: 40px 10px 40px 40px;
     font-style: italic;
     font-weight: 700;
@@ -33,35 +64,26 @@ h1{
 
 h1:hover {
     cursor: pointer;
-    font-size: 35px;
-    color: #e4bf06;
+    font-size: 40px;
+    color: #ebeb05;
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
-}
-
-.busca {
-    background-color: #e4bf06;
-    border: solid 0px;
-    width: 200px;
-    height: 20px;
-    border-radius: 5px;
-    display: flex;
-    padding: 2px;
-    position: relative;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 button {
     width: 80px;
-    height: 20px;
+    height: 30px;
     position: relative;
     flex-flow: wrap column;
     padding: 2 px;
-    background-color: #e4bf06;
-    color: white;
+    background-color: #ebeb05;
     margin-right: 20px;
     border-radius: 5px;
     text-align: center;
@@ -70,10 +92,9 @@ button {
 
 button:hover {
     cursor: pointer;
-    width: 90px;
-    height: 25px;
+    transform: scale(1.2);
     padding: 3px;
-    color: #e4bf06;
+    color: #ebeb05;
     box-shadow: 0 0 25px #d35400;
     text-shadow: 0 0 25px #d35400;
 }
@@ -89,47 +110,33 @@ a:hover {
     color: white;
 }
 
-.pricipal {
-
-    height: 300px;
-}
-
  main {
-     display: block;
-     justify-content: center;
-     width: auto;
-     height: auto;
-     margin-right: 25px;
+    display: block;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-right: 25px;
  }
 
-.container-filmes-01 {
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+.container-filmes {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    margin: 14px 14px 7px 14px;
-}
-
-.container-filmes-02 {
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    margin: 7px 14px 14px 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .poster{
-    width: 125px;
+    width: 150px;
     height: auto;
     border-radius: 2%;
-    border-color: ;
+    margin-bottom: 10px;
 }
 
 .poster:hover {
     cursor: pointer;
-    width: 200px;
+    transform: scale(1.3);
     height: auto;
     padding: 2px;
     box-shadow: 0 0 25px #2d2c2c;
@@ -143,48 +150,48 @@ footer {
     align-content: center;
     align-items: center;
     background: #2d2c2c;
-    color: #e4bf06;
+    color: #ebeb05;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
-.rodape {
-    display: flex;
-    height: 40px;
-    list-style: none;
-    color: #e4bf06;
-}
 
 .socialMedia {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-}
-
-.socialMedia li {
+.socialMedia a {
+    background-color: #ebeb05;
+    color: #2d2c2c;
     position: relative;
     display: block;
-    font-size: 25px;
-    height: 25px;
-    width: 25px;
-    line-height: 30px;
-    margin: 0 15px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin:  15px 15px;
     cursor: pointer;
     transition: .5s;
     border-radius: 50%;
 }
 
-.socialMedia li:hover {
-    font-size: 30px;
-    height: 30px;
-    width: 30px;
+.socialMedia a:hover {
+    display: flex;
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
 }
-.socialMedia li:before {
+
+
+
+/* .socialMedia a:before {
     position: absolute;
     content: "";
     top: 0;
@@ -195,124 +202,120 @@ ul {
     transform: scale(.8);
     z-index: -1;
     transition: .5s;
-}
-/*
-.socialMedia li:nth-child(1):before {
-    background #1DA1F2;
-}
-
-
-.socialMedia li:nth-child(2):before {
-    background: #4267B2;
-}
-
-
-.socialMedia li:nth-child(3):before {
-    background: #ff0000;
-}
-
-
-.socialMedia li:nth-child(4):before {
-    background: #E1306C;
-}
-
-.socialMedia li:hover:before {
-    filter: blur(3px);
-    transform: scale(1.2);
-}
-
-.socialMedia li:nth-child(1):hover:before {
-    box-shadow: 0 0 15px #1DA1F2;
-}
-
-.socialMedia li:nth-child(2):hover:before {
-    box-shadow: 0 0 15px #4267B2;
-}
-
-.socialMedia li:nth-child(3):hover:before {
-    box-shadow: 0 0 15px #ff0000;
-}
-.socialMedia li:nth-child(4):hover:before {
-    box-shadow: 0 0 15px #E1306C;
 } */
 
-/* ul li:nth-child(1):hover {
-    color: #26a4f2;
-    box-shadow: 0 0 15px #1DA1F2;
-    text-shadow: 0 0 15px #1DA1F2;
-}
-
-ul li:nth-child(2):hover {
-    color: #456cba;
-    box-shadow: 0 0 15px #4267B2;
-    text-shadow: 0 0 15px #4267B2;
-}
-
-ul li:nth-child(3):hover{
-    color: #ff1a1a;
-    box-shadow: 0 0 15px #ff0000;
-    text-shadow: 0 0 15px #ff0000;
-  }
-
-  ul li:nth-child(4):hover{
-    color: #e23670;
-    box-shadow: 0 0 15px #E1306C;
-    text-shadow: 0 0 15px #E1306C;
-  } */
-
- .socialMedia li:hover {
-    color: #e4bf06;
+ /* .socialMedia a:hover {
+    color: #ebeb05;
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
- }
+ } */
 
  .copyright i {
      height: 10px;
  }
 
  .copyright:hover{
-    color: #e4bf06;
+    color: #ebeb05;
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
     transition: .5s;
  }
 
- @media(max-width:768px){
-     body {
-         display: block;
-         position: relative;
+ /* Iniciando media query */
+
+ @media (max-width: 600px) {
+     nav h1 {
+         font-size: 40pt;
      }
 
-     .menu h1 {
-         margin: 0;
-         margin: 0;
-     }
+     nav h1:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+        color: #ebeb05;
+        box-shadow: 0 0 15px #d35400;
+        text-shadow: 0 0 15px #d35400;
+    } 
 
-     .container {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-evenly;
-         align-items: initial;
-         margin-top: 15px;
-     }
-
-     .container button {
-         width: auto;
-         height: auto;
-         margin-right: 40px;
-     }
-
-     .container-filmes-01 {
+    .menu {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .busca {
+        width: 100%;
+        height: 40px;
+        display: row;
         flex-direction: row;
-        justify-content: space-around;
-        margin-top: 20px; 
-        margin-left: 15px;
-     }
-     
-     .container-filmes-02 {
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .busca input {
+        width: 80%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: -9px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 20px;
+        margin-left: 0;
+    }
+
+    .busca img {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .container button {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 0.25px;
+    }
+
+    .container button:hover {
+        cursor: pointer;
+        padding: 3px;
+        color: #ebeb05;
+        box-shadow: 0 0 25px #d35400;
+        text-shadow: 0 0 25px #d35400;
+    }
+
+    .container-filmes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px;;
+        
+    } 
+
+    .poster {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin: 40px;
+    }
+
+    .poster:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        height: auto;
+        padding: 2px;
+        box-shadow: 0 0 25px #2d2c2c;
+    }
  }
+    
